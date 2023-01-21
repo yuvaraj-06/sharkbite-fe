@@ -19,5 +19,5 @@
         {/each}
         <!-- <ResponseArea speaker="Mark" /> -->
     </div>
-    <!-- <WaveFooter /> -->
+    <WaveFooter />
 </div>
