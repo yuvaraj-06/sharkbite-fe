@@ -10,7 +10,7 @@
         <!-- <h1>You</h1> -->
         <TextArea />
         <ResponseArea speaker="Kevin" />
-        <ResponseArea speaker="Mark" />
+        <!-- <ResponseArea speaker="Mark" /> -->
     </div>
     <!-- <WaveFooter /> -->
 </div>

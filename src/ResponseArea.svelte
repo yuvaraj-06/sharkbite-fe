@@ -1,6 +1,7 @@
 <script>
     import NameSlip from "./NameSlip.svelte";
     import TextOutput from "./TextOutput.svelte";
+    import "animate.css";
     export let speaker;
     export let content =
         "So it doesn't expand itself to have height of the entire screen during scroll, So this can be overcomed by using min-h-screen, meaning minimum should be the viewport height and in the occurance of scroll , expand yourself to have maximum possible height.";
@@ -16,7 +17,7 @@
     bgColor = "bg-" + bgColor;
 </script>
 
-<div class="flex flex-row h-40 rounded-r">
+<div class="flex flex-row h-40 rounded-r animate__animated animate__fadeInUp">
     <NameSlip name={speaker} {bgColor} />
     <TextOutput {content} {ringColor} />
 </div>
