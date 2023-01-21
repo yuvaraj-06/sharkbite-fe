@@ -4,7 +4,7 @@
     export let ringColor;
 </script>
 
-<div class="p-6 ring ring-inset {ringColor} w-full">
-    <!-- <TypingAnimated text={content} delay={50} /> -->
-    {content}
+<div class="p-6 ring ring-inset {ringColor} w-full font-mono">
+    <TypingAnimated text={content} delay={50} />
+    <!-- {content} -->
 </div>
