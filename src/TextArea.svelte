@@ -1,5 +1,5 @@
 <script>
-    import { response } from "./stores";
+    import { responses } from "./stores";
     let query = "";
 </script>
 
@@ -15,7 +15,10 @@
         class="rounded-r bg-indigo-600 w-1/12 text-gray-300 hover:bg-indigo-500 transition-all delay-75"
         on:click={() => {
             console.log("Hey!" + query);
-            response.set(query);
+            responses.update((r) => {
+                r.push(query);
+                return r;
+            });
         }}>>></button
     >
 </div>

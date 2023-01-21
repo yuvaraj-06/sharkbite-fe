@@ -5,5 +5,6 @@
 </script>
 
 <div class="p-6 ring ring-inset {ringColor} w-full">
-    <TypingAnimated text={content} delay={50} />
+    <!-- <TypingAnimated text={content} delay={50} /> -->
+    {content}
 </div>
