@@ -16,7 +16,7 @@
     bgColor = "bg-" + bgColor;
 </script>
 
-<div class="flex flex-row h-40 bg-gray-800 rounded-r drop-shadow">
+<div class="flex flex-row h-40 rounded-r">
     <NameSlip name={speaker} {bgColor} />
     <TextOutput {content} {ringColor} />
 </div>

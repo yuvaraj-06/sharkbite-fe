@@ -3,7 +3,7 @@
     export let ringColor;
 </script>
 
-<div class="p-6">
+<div class="p-6 ring ring-inset {ringColor}">
     <p>
         {content}
     </p>
