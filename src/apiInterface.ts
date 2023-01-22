@@ -1,7 +1,7 @@
 export async function getResponse(query: string): Promise<JSON> {
     return new Promise<JSON>(async (resolve, reject) => {
         let result: Promise<JSON>;
-        await fetch("http://localhost:8080/", {
+        await fetch("https://shark1.onrender.com/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
