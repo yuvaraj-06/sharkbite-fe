@@ -14,12 +14,13 @@
     />
     <button
         class="rounded-r bg-indigo-600 w-1/12 text-gray-300 hover:bg-indigo-500 transition-all delay-75"
-        on:click={async () => {
-            let resp = await getResponse(query);
-            console.log(resp);
-            responses.update((r) => {
-                r.push(resp[Math.floor(Math.random() * 5)].body);
-                return r;
+        on:click={() => {
+            getResponse(query).then((resp) => {
+                console.log(resp);
+                responses.update((r) => {
+                    r.push(resp["result"]["result"]["Kevin O'Leary"]);
+                    return r;
+                });
             });
         }}>>></button
     >

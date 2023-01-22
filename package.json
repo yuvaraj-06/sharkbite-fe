@@ -25,7 +25,6 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.191",
     "@types/lodash-es": "^4.17.6",
     "animate.css": "^4.1.1",
     "svelte-typing-animated": "^1.0.7"

@@ -14,10 +14,12 @@
     <div class="container px-5 py-24 mx-auto flex flex-col lg:w-4/6 space-y-10">
         <!-- <h1>You</h1> -->
         <TextArea />
-        {#each $responses as response}
-            <ResponseArea speaker="Kevin" content={response} />
-        {/each}
-        <!-- <ResponseArea speaker="Mark" /> -->
+        <div class="flex flex-col space-y-4">
+            {#each $responses as response}
+                <ResponseArea speaker="Kevin" content={response} />
+            {/each}
+            <!-- <ResponseArea speaker="Mark" /> -->
+        </div>
     </div>
     <WaveFooter />
 </div>
