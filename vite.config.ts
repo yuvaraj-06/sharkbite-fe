@@ -4,8 +4,14 @@ import autoPreprocess from 'svelte-preprocess';
 
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(
+  
+  {
   plugins: [svelte({
     preprocess: autoPreprocess()
   })],
+  server: {
+    
+      host: '0.0.0.0',
+  }
 })
